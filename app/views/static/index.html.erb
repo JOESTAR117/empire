@@ -1,0 +1,25 @@
+<button id="sound-btn" class="sound-btn" aria-label="Iniciar som">
+    <i class="bi bi-volume-down-fill"></i>
+</button>
+
+
+<main class = "main">
+    <audio id="myAudio">
+        <source src="<%= asset_path('sound/som.mp3') %>" type="audio/mpeg">
+    </audio>
+
+    <img class="icone" src="<%= asset_path('images (1).png') %>" alt="Descrição da imagem">
+      <h1 class="text">obrigado pelo contato</h1>
+      <p class="paragrafo">em breve entraremos em contato</p>
+      <p class="paragrafo">você não conhece o poder do lado sombrio</p>
+      <%= link_to 'Home', root_path, class: 'btn' %>
+</main>
+
+<script>
+  var audio = document.getElementById('myAudio');
+  var soundBtn = document.getElementById('sound-btn');
+
+  soundBtn.addEventListener('click', function() {
+    audio.play();
+  });
+</script>

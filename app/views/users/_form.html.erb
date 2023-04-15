@@ -1,0 +1,31 @@
+<%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(user.errors.count, "erros") %> detectado(s):</h2>
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form">
+    <%= form.label :name %>
+    <%= form.text_field :name, placeholder: 'Digite seu nome' %>
+  </div>
+
+  <div class="form">
+    <%= form.label :email %>
+    <%= form.text_field :email, placeholder: 'Digite seu email' %>
+  </div>
+
+  <div class="form">
+    <%= form.label :location %>
+    <%= form.text_area :location, cols: 30, rows: 10, placeholder: 'Localização' %>
+  </div>
+
+  <div class="enviar">
+    <%= form.submit 'Registrar' %>
+  </div>
+<% end %>

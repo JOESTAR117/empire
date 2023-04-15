@@ -1,0 +1,56 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .icone {
+        width: 100px;
+    }
+
+    .text {
+        font-size: 45px;
+        color: #f5f5f5;
+        margin-bottom: 30px;
+        font-family: 'star';
+        text-align: center;
+    }
+
+    .paragrafo {
+        color: #f5f5f5;
+        margin-bottom: 50px;
+        font-family: star2;
+    }
+
+    .btn {
+        padding: 15px 55px;
+        background: #f5f5f5;
+        text-decoration: none;
+        color: #101026;
+        font-size: 18px;
+        transition: all 0.5s;
+
+        &:hover {
+            border-radius: 16px;
+        }
+    }
+
+}
+button#sound-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 0;
+    position: relative;
+    top: -12em;
+    left: -9em;
+}
+
+button#sound-btn i {
+    color: #ca2727;
+}
+
+button#sound-btn:hover i {
+    color: #f5f5f5;
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap');
+
+
+@font-face {
+    font-family: 'star';
+    src: url('/fonts/Starjhol.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'star2';
+    src: url('/fonts/STJEDISE.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import 'global';
+@import 'form';
+@import 'static';
